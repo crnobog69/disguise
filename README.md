@@ -1,5 +1,3 @@
-Here's the README in Serbian Cyrillic with the requested structure and buttons:
-
 ### README на српском 🇷🇸
 > [Read in English 🇬🇧](#readme-in-english-)
 
