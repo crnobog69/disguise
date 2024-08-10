@@ -2,6 +2,10 @@
 > [!NOTE]
 > Discord Server Invite -> [|---👋---|](https://discord.gg/Ufzrpsq3b3)
 
+> [!WARNING]
+> [Политика приватности](privacy-and-policy-sr.md)
+> [Privacy and policy](privacy-and-policy-en.md)
+
 ### README на српском 🇷🇸
 > [Read in English 🇬🇧](#readme-in-english-)
 
