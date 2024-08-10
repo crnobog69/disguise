@@ -1,0 +1,98 @@
+/* Дефинисање глобалних варијабли за боје */
+:root {
+    --bg-color: #0b0c1d; /* Тамнија свемирска боја */
+    --card-color: #1c1e3a; /* Тамнија боја за картицу */
+    --text-color: #e0e0e0; /* Светло сива */
+    --accent-color: #8a94f0; /* Светлија плава */
+}
+
+/* Стилизација тела странице */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    flex-direction: column; /* Додато за вертикално центрирање */
+}
+
+/* Стилизација наслова */
+h1 {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0; /* Повећано растојање изнад и испод наслова */
+}
+
+/* Стилизација форме */
+form {
+    background-color: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирање елемената унутар форме */
+    margin-bottom: 1rem; /* Размак испод форме */
+}
+
+/* Стилизација текст поља */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2a2c54;
+    border-radius: 4px;
+    background-color: #2c2f57;
+    color: #ffffff;
+    resize: none;
+}
+
+/* Стилизација дугмета */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Стилизација статус поруке */
+#status {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Стилизација звезда у позадини */
+.star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: twinkle 5s infinite ease-in-out;
+}
+
+/* Анимација трептања звезда */
+@keyframes twinkle {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
