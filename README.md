@@ -1,4 +1,4 @@
-# [crnobog69.github.io/disguise/index](crnobog69.github.io/disguise/index)
+# [https://crnobog69.github.io/disguise/index](https://crnobog69.github.io/disguise/index)
 > [!NOTE]
 > Discord Server Invite -> [|---👋---|](https://discord.gg/Ufzrpsq3b3)
 
