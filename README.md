@@ -1,5 +1,6 @@
 # [crnobog69.github.io/disguise/](crnobog69.github.io/disguise/)
-[Discord Server Invite](https://discord.gg/Ufzrpsq3b3)
+> [!NOTE]
+> [Discord Server Invite](https://discord.gg/Ufzrpsq3b3)
 
 ### README на српском 🇷🇸
 > [Read in English 🇬🇧](#readme-in-english-)
