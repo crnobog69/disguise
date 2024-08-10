@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisGuise - Anonimne poruke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #7289da;
+            text-align: center;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #7289da;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a6eaf;
+        }
+        #status {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>DisWhisper</h1>
+    <form id="messageForm">
+        <textarea id="message" rows="4" placeholder="Unesite vašu anonimnu poruku ovde..." required></textarea>
+        <button type="submit">Pošalji</button>
+    </form>
+    <div id="status"></div>
+
+    <script>
+        const form = document.getElementById('messageForm');
+        const statusDiv = document.getElementById('status');
+        const webhookURL = 'https://discord.com/api/webhooks/1271901711581057034/2ZBhvDiLatUOViLEzRnB7hqnNxJbzcUVQx-R4mzGefFYiHB3Hz-ZKmk5DIfSYsfQswPQ';
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const message = document.getElementById('message').value;
+            statusDiv.textContent = 'Slanje poruke...';
+
+            try {
+                const response = await fetch(webhookURL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        content: message,
+                        username: 'DisGuise',
+                        avatar_url: '' // Opciono: dodajte URL za avatar
+                    }),
+                });
+
+                if (response.ok) {
+                    statusDiv.textContent = 'Poruka je uspešno poslata!';
+                    form.reset();
+                } else {
+                    throw new Error('Neuspešno slanje');
+                }
+            } catch (error) {
+                statusDiv.textContent = 'Došlo je do greške prilikom slanja poruke.';
+                console.error('Greška:', error);
+            }
+        });
+    </script>
+</body>
+</html>
