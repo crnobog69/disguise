@@ -37,7 +37,7 @@ Send anonymous messages to Discord. 📨
 2. ✍️ Type your message
 3. 📤 Click send
 4. 👀 Check the status icon
-5. 👻 Read the [message](https://discord.gg/Ufzrpsq3b3)
+5. 👻 See the [message](https://discord.gg/Ufzrpsq3b3)
 
 ## 🛠️ Setup
 Replace the webhook URL in the code with your own Discord webhook. 🔗
