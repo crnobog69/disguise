@@ -1,4 +1,5 @@
 # [https://crnobog69.github.io/disguise/index](https://crnobog69.github.io/disguise/index)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P311PGR8)
 > [!NOTE]
 > Discord Server Invite -> [|---👋---|](https://discord.gg/Ufzrpsq3b3)
 
