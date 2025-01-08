@@ -1,8 +1,7 @@
 // Дохватање елемената форме и статуса
 const form = document.getElementById("messageForm");
 const statusDiv = document.getElementById("status");
-const webhookURL =
-    "https://discord.com/api/webhooks/1271901711581057034/2ZBhvDiLatUOViLEzRnB7hqnNxJbzcUVQx-R4mzGefFYiHB3Hz-ZKmk5DIfSYsfQswPQ";
+const webhookURL = process.env.DISCORD_WEBHOOK_URL;
 
 // Додавање event listener-а за слање форме
 form.addEventListener("submit", async (e) => {
